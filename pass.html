@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type= "number" id="mtData" value=5>
+
+<script>
+function myFunction() {
+    var score 
+	score= document.getElementById("mtData").value;
+
+    if (parseInt(score)<60) {
+       document.getElementById("result").innerHTML="false";
+    } else {
+        document.getElementById("result").innerHTML="pass";
+    }
+}
+</script>
+<output id="result"></output>
+<button onclick="myFunction()">go</button>
+
+</body>
+</html>

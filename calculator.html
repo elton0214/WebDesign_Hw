@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Computer</h1>
+
+<input type= "number" id="mtData" value=5>
+<input type= "number" id="mtData2" value=5>
+
+<script>
+function add(){
+	var x,y
+	x= document.getElementById("mtData").value;
+    y= document.getElementById("mtData2").value;
+    document.getElementById("result").innerHTML= parseInt(x)+parseInt(y);
+}    
+
+function subtract(){
+	var x,y
+	x= document.getElementById("mtData").value;
+    y= document.getElementById("mtData2").value;
+    document.getElementById("result").innerHTML= parseInt(x)-parseInt(y);
+}   
+
+function multiply(){
+	var x,y
+	x= document.getElementById("mtData").value;
+    y= document.getElementById("mtData2").value;
+    document.getElementById("result").innerHTML= parseInt(x)*parseInt(y);
+}   
+
+function divide(){
+	var x,y
+	x= document.getElementById("mtData").value;
+    y= document.getElementById("mtData2").value;
+    document.getElementById("result").innerHTML= parseInt(x)/parseInt(y);
+}   
+
+function reset(){
+
+	document.getElementById("mtData").value=0;
+    document.getElementById("mtData2").value=0;
+    document.getElementById("result").innerHTML=0;
+    }
+</script>
+
+<output id="result"></output>
+<button onclick="add()">+</button>
+
+<output id="result"></output>
+<button onclick="subtract()">-</button>
+<output id="result"></output>
+<button onclick="multiply()">*</button>
+<output id="result"></output>
+<button onclick="divide()">/</button>
+<output id="result"></output>
+<button onclick="reset()">c</button>
+
+</body>
+</html> 
